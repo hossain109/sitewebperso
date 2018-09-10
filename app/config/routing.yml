@@ -1,0 +1,4 @@
+monsiteweb:
+    resource: "@MonsitewebBundle/Resources/config/routing.yml"
+    prefix:   /monsiteweb/
+

@@ -1,0 +1,127 @@
+{% extends '::layout/layout.html.twig' %}
+
+{% block body %}
+    <div class="container" style="width:80%;background-color: #f9ebeb;">
+
+        {% block header %}
+            <div class="row ">
+                <div class="col-lg-12 bloc-header-title"> 
+
+                    <div class="col-lg-4 col-lg-offset-1">
+                        <img src="{{ asset('img/sohrab.jpg') }}" class="img-circle"/>
+                    </div>
+                    <div class="col-lg-7"> 
+                        <span class="title-header01">Sohrab Hossain</span>
+                        <a href="/"  class="title-header02" title="sohrb hossian concepteur">Concepteur Dévéloppeur Informatique. </a>
+                        <span class="title-header03">
+                            <strong class="php">Symfony 2.8,3,4,Bootstrap 3,4,Webpack Encore,SCSS,Angular 2, PHP, MySQL/SQLite,Java, jQuery, Agile-Scrum</strong> <strong class="android"></strong>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        {% endblock %}
+        {% block nav %}
+            <div class="row">
+                <div class="col-lg-12" style="background-color: #c7bfb2;">
+                    <div class="navbar-link navtext">
+                        <ul class="list-inline">
+                            <li><a href="#contenu">Présentation</a></li>
+                            <li><a href="#formation">Formation</a></li>
+                            <li><a href="#competence">Compétence</a></li>
+                            <li><a href="#experience">Expérience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+        <div id="contenu">
+        {% block contenu %}
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><em>Bienvenue sur mon site</em></h2>
+                    <p class="text-justify">Je suis actuellement titulaire d'un diplôme "Concepteur Développeur Informatique et suis à la recherche d'un emploi dans le domaine de développeur web php/symfony. <br><br>
+
+Je dispose de compétences dans le domaine du développement web Fronend, Bower, Grunt, jQuery,webpack encore, Angular 2, bootstrap, css3,SASS/Compass suite aux projets créés dans le cadre de ma formation, stage et projet perso.<br><br>
+
+Je dispose également de compétences dans le domaine du backend, notamment via Symfony 2.8,3.0,4.0, PHP, mySQL (pour la création de mon site web) ou Node.js (pour l'amélioration d'un des projets perso, y ajoutant un mode en ligne, un système de connexion et d'autres fonctionnalités). Tous mes projets (précédents et actuels) sont d'ailleurs visibles sur mon repo GitHub à l'adresse suivante : https://github.com/.<br><br>
+
+Je suis disponible immédiatement, et me tiens à votre entière disposition pour d'éventuelles informations complémentaires
+                    </p>  
+                    <br><br><br><br>  <br><div class="row">  
+                        <div class="col-lg-4">
+                            <h3> <span class="label label-warning"><a href="{{ asset('var/cv.pdf') }}"/>Télécharger CV [PDF]</a></span></h3><br>
+                            <strong><p class="text-success">Portable: 07.51.29.22.64</p></strong>
+                            <strong><p class="text-info">E-mail: sohrab_sust_cse@yahoo.com</p></strong>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Mes Réalisation</div>
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{asset('http://pleaky.com/')}}">www.pleaky.com/</a></li>
+                                        <li><a href="{{asset('http://projetnfa021.tk')}}">http://projetnfa021.tk/</a></li>
+                                        <li><a href="{{asset('http://restovin.tk')}}">http://restovin.tk/</a></li>
+                                        <li><a href="{{asset('http://sohrabhossin.tk')}}">http://sohrabhossain.tk/</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row"><br /><br />
+                        <div class="col-lg-5">
+                            <p class="text-primary">Système d'exploitation:</p>
+                            <ul class="list-inline">
+                                <li>Linux,</li>
+                                <li>Windows</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2">
+                            <p class="text-info">Langue:</p>
+                            <ul class="list-inline">
+                                <li>Français,</li>
+                                <li>Anglais Courant</li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock%}
+        </div>
+
+        {% block formation %}
+            {% include 'MonsitewebBundle:Default:formation.html.twig' %}
+        {% endblock %}
+        {% block experience %}
+            {% include 'MonsitewebBundle:Default:experience.html.twig' %}
+        {% endblock %}
+        {% block competence %}
+            {% include 'MonsitewebBundle:Default:competence.html.twig' %}
+        {% endblock %}
+        {% block contact %}
+            {% include 'MonsitewebBundle:Default:contact.html.twig' %}
+        {% endblock %}
+        {% block footer %}
+            <div class="row">
+                <div class="col-lg-12" style="background-color: #c7bfb2;">
+                    <div class="navbar-link navtext" style="background-color: #c7bfb2;">
+                        <ul class="list-inline">
+                           <li><a href="#contenu">Présentation</a></li>
+                            <li><a href="#formation">Formation</a></li>
+                            <li><a href="#competence">Compétence</a></li>
+                            <li><a href="#experience">Expérience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            {% endblock %}
+
+        </div>
+    {% endblock %}

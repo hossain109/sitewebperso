@@ -1,0 +1,3 @@
+monsiteweb_homepage:
+    path:     /sohrab
+    defaults: { _controller: MonsitewebBundle:Home:index }

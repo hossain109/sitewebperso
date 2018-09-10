@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box;
+}
+.bloc-header-title {
+    background-color: #282342;
+    display: block;
+    color: #ffffff;
+    height:180px;
+}
+.row{
+    text-align: center;
+    padding-top: 0;
+}
+competence{
+    padding-top: -70px;
+}
+.title-header01{
+    font-family: 'vollkornregular';
+    font-size: 30px;
+    display: block;
+    padding-top: 35px;
+}
+.bloc-header-title {
+    color: #ffffff;
+}
+.bloc-header-title a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.title-header02{
+    font-size: 30px;
+    padding-bottom: 8px;
+    font-family: 'vollkornregular';
+    display: block;
+}
+.title-header03{
+    font-size: 12px;
+    font-family: 'vollkornregular';
+    display: block;
+}
+.img-circle{
+    position: absolute;
+    padding-top: 0px;
+    display: block;
+    height: 170px;
+    width: 140px;  
+}
+body {
+    font-size:100%;
+    min-width:100%;
+    min-height:100%;
+    font-family: 'open_sansregular';
+    line-height: 1;
+    font-size: 14px;
+}
+.navtext{
+    text-align: center;
+    color: blue;
+    font-size: 1.5em;
+    padding-top: 4px;
+}
+h2{
+    font-size: 35px;
+    text-align: left;
+    text-shadow: 2px 2px #FF0000;
+}
+.text-justify{
+    font-size: 20px;
+}
+.nomheader{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+.nommetier{
+    font-family: Arvo, serif;
+    color:#fff;
+}
+.panel-heading{
+    font-size: 18px;
+    color:blanchedalmond;
+}
+.panel-body{
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.9em;
+}
+.diplome{
+    font-family: fantasy;
+    font-size: 3em;
+    padding-top: 19px;
+}
+.description_diplome{
+    text-align: justify;
+}
